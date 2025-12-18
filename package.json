@@ -2,7 +2,7 @@
   "name": "flutter-test-helper",
   "displayName": "Flutter Test Helper",
   "description": "Streamline test file creation and management for Dart and Flutter projects",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "publisher": "yosemiteyss",
   "engines": {
     "vscode": "^1.85.0"

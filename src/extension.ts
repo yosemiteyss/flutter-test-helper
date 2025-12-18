@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { COMMAND_ID, REFRESH_DECORATIONS_COMMAND_ID, UPDATE_GOLDENS_COMMAND_ID } from './constants';
+import { CREATE_TEST_FOR_CLASS_COMMAND_ID, REFRESH_DECORATIONS_COMMAND_ID, UPDATE_GOLDENS_COMMAND_ID } from './constants';
 import { ClassInfo } from './types';
 import { DartTestCodeLensProvider } from './providers/create-test-code-lens-provider';
 import { TestGoldenCodeLensProvider } from './providers/test-golden-code-lens-provider';
@@ -72,7 +72,7 @@ export function activate(context: vscode.ExtensionContext): void {
 
   // Register create test command
   const commandDisposable = vscode.commands.registerCommand(
-    COMMAND_ID,
+    CREATE_TEST_FOR_CLASS_COMMAND_ID,
     async (args: ClassInfo) => {
       await handleCreateTestCommand(args);
       // Refresh decorations after creating a test file
